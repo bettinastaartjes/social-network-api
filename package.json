@@ -1,0 +1,20 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "# Assignment: An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list, using Express.js for routing links to an external site, a MongoDB database, and the Mongoose ODM.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bettinastaartjes/social-network-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bettinastaartjes/social-network-api/issues"
+  },
+  "homepage": "https://github.com/bettinastaartjes/social-network-api#readme"
+}
