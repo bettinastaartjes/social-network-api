@@ -11,6 +11,7 @@ const reactionSchema = new Schema(
     reactionBody: {
       type: String,
       required: true,
+      maxlength: 280
     },
     username: {
         type: String,
@@ -19,6 +20,7 @@ const reactionSchema = new Schema(
     createdAt: {
         type: Date,
         default: Date.now,
+        get: timestamp => dateFormat(timestamp)
     }
   },
   {

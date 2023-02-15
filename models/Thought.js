@@ -8,10 +8,13 @@ const thoughtSchema = new Schema(
     thoughtText: {
       type: String,
       required: 'Gotta leave a thought!',
+      minlength: 1,
+      maxlength: 280
     },
     createdAt: {
       type: Date,
       default: Date.now,
+      get: timestamp => dateFormat(timestamp)
     },
     username: {
         type: String,
@@ -29,7 +32,7 @@ const thoughtSchema = new Schema(
 
 // Create a virtual property `reactionCount` that gets the amount of reactions per user
 thoughtSchema
-  .virtual('reacionCount')
+  .virtual('reactionCount')
   // Getter
   .get(function () {
     return this.reactions.length;
