@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/bettinastaartjes/social-network-api/issues"
   },
-  "homepage": "https://github.com/bettinastaartjes/social-network-api#readme"
+  "homepage": "https://github.com/bettinastaartjes/social-network-api#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
